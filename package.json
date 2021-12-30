@@ -30,5 +30,8 @@
     "sass": "^1.45.1",
     "stylelint": "^14.2.0",
     "stylelint-config-standard-scss": "^3.0.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.0"
   }
 }

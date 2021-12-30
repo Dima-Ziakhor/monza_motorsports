@@ -1,0 +1,32 @@
+.navigation {
+  padding: 20px 0;
+
+  &__logo {
+    display: block;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 15px;
+    color: $primary-200;
+    text-decoration: none;
+    transition: color $transition-duration;
+
+    &:hover {
+      color: $primary-300;
+    }
+  }
+
+  &__messangers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 23px;
+  }
+}

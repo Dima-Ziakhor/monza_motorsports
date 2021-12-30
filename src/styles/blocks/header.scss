@@ -1,0 +1,36 @@
+.header {
+  height: 100vh;
+  background: url("../images/main-bg.png") center center / cover no-repeat;
+
+  &__content {
+    padding: 118px 0 148px;
+  }
+
+  &__title {
+    padding: 0;
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: 50px;
+    color: $primary-200;
+  }
+
+  &__description-wrapper {
+    margin-bottom: 72px;
+  }
+
+  &__description {
+    padding: 0 20px 0 0;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    color: $primary-200;
+  }
+
+  &__button {
+    @include button($transparent, $primary-200);
+
+    &:hover {
+      color: $primary-100;
+    }
+  }
+}

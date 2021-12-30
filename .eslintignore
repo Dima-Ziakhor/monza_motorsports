@@ -1,0 +1,5 @@
+# Bootstrap files
+src/bootstrap/
+
+# Reset styles file
+src/styles/reset.scss

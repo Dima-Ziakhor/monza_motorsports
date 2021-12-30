@@ -1,0 +1,21 @@
+@mixin button($btn-color, $txt-color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  border: 2px solid $txt-color;
+  border-radius: 15px;
+  background-color: $btn-color;
+  font-weight: 500;
+  font-size: 20px;
+  color: $txt-color;
+  text-decoration: none;
+  transition:
+    background-color $transition-duration,
+    color $transition-duration;
+
+  &:hover {
+    background-color: $txt-color;
+    color: $btn-color;
+  }
+}
