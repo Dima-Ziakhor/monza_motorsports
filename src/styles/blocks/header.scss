@@ -1,6 +1,10 @@
 .header {
-  height: 100vh;
+  min-height: 100vh;
   background: url("../images/main-bg.png") center center / cover no-repeat;
+
+  &__logo {
+    width: 139px;
+  }
 
   &__content {
     padding: 118px 0 148px;

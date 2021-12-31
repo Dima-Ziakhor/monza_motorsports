@@ -1,0 +1,105 @@
+.cars-selection {
+  padding: 100px 0 120px;
+  background-color: $car-cards-section-bgc;
+
+  &__title {
+    @include section-title;
+  }
+
+  &__select-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+    &--mb {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__select-wrapper {
+    width: 170px;
+  }
+
+  &__button {
+    @include button($primary-300, $secondary-500);
+
+    width: 290px;
+    height: 48px;
+    border-color: $primary-300;
+    font-weight: normal;
+    font-size: 15px;
+
+    &:hover {
+      border-color: $primary-300;
+    }
+  }
+
+  &__sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__label {
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  &__sort-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border: none;
+    height: max-content;
+    background-color: $car-cards-section-bgc;
+  }
+
+  &__sort-by {
+    font-weight: normal;
+    font-size: 12px;
+    color: $primary-100;
+  }
+
+  &__sort-arrows {
+    margin: 0 8px 0 16px;
+  }
+
+  &__sort-title {
+    padding: 0;
+    font-weight: normal;
+    font-size: 12px;
+    width: max-content;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    transition: color $transition-duration;
+
+    &:hover {
+      color: $primary-300;
+    }
+  }
+
+  &__sort-content-wrapper {
+    border: 1px solid $secondary-300;
+    border-radius: 15px;
+  }
+
+  &__sort-content {
+    border: none;
+  }
+
+  &__sort-label {
+    font-weight: normal;
+    font-size: 12px;
+    height: 30px;
+  }
+}

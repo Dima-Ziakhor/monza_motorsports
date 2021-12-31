@@ -3,3 +3,6 @@ src/bootstrap/
 
 # Reset styles file
 src/styles/reset.scss
+
+# Select styles
+src/styles/blocks/select.scss
