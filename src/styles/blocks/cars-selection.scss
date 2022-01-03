@@ -18,6 +18,28 @@
     }
   }
 
+  &__available {
+    display: flex;
+    align-items: center;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__check {
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+    border: 2px solid $secondary-200;
+    border-radius: 5px;
+
+    &--checked {
+      background: url("../icons/check.png") center center / cover no-repeat;
+      border: none;
+    }
+  }
+
   &__select-wrapper {
     width: 170px;
   }

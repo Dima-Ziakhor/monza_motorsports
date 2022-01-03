@@ -15,4 +15,12 @@
     justify-content: flex-end;
     gap: 24px;
   }
+
+  @media (max-width: 575px) {
+    &__row-modify {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+  }
 }

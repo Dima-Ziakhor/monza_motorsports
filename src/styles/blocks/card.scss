@@ -5,8 +5,8 @@
   box-shadow: 0 0 18px rgba(68 68 68 / 9%);
 
   &__title {
+    display: block;
     font-weight: normal;
-    font-size: 17px;
     color: $primary-100;
     text-decoration: none;
 
@@ -31,7 +31,6 @@
   &__year {
     margin-right: 8px;
     font-weight: 400;
-    font-size: 17px;
     color: $secondary-200;
   }
 
@@ -50,5 +49,16 @@
     font-weight: 500;
     font-size: 20px;
     color: $primary-100;
+  }
+
+  @media (max-width: 1023px) {
+    &__main-info,
+    &__info {
+      font-size: 11px;
+    }
+
+    &__price {
+      font-size: 17px;
+    }
   }
 }

@@ -15,7 +15,7 @@
     <header class="header container-fluid">
       <nav class="navigation container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-lg-8 col-6">
             <a href="#" class="logo header__logo">
               <img
                 src="./icons/logo.svg"
@@ -25,7 +25,7 @@
             </a>
           </div>
 
-          <ul class="navigation__menu col-md-3">
+          <ul class="navigation__menu col-lg-3">
             <li class="navigation__item">
               <a href="#" class="navigation__link">Inventory</a>
             </li>
@@ -37,7 +37,7 @@
             </li>
           </ul>
 
-          <div class="navigation__messangers col-md-1">
+          <div class="navigation__messangers col-lg-1">
             <a href="#" class="navigation__messanger">
               <img src="./icons/facebook.svg" alt="facebook" class="navigation__icon">
             </a>
@@ -45,6 +45,33 @@
               <img src="./icons/instagram.svg" alt="instagram" class="navigation__icon">
             </a>
           </div>
+
+          <div id="toggler" class="navigation__toggler-wrapper col-6 col-lg-4 col-sm-6">
+            <a class="navigation__toggler">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+        </div>
+
+        <div id="navOnSmallSreen" class="navigation__small-sreen">
+          <div id="closeNav" class="navigation__small-sreen-close">
+            <div></div>
+            <div></div>
+          </div>
+
+          <ul class="navigation__menu-small-sreen">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Inventory</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Financing</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Contacts</a>
+            </li>
+          </ul>
         </div>
       </nav>
 
@@ -437,7 +464,8 @@
 
           <div class="cars-selection__sort">
             <div class="cars-selection__available">
-              <input id="checkbox" type="checkbox" class="cars-selection__checkbox">
+              <div id="check" class="cars-selection__check"></div>
+              <input id="checkbox" type="checkbox" class="cars-selection__checkbox cars-selection__checkbox--checked">
               <label for="checkbox" class="cars-selection__label">
                 Instantly available vehicles
               </label>
@@ -536,7 +564,7 @@
       <section class="car-cards">
         <div class="container">
           <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/volkswagen_tiguan.png" alt="Volkswagen Tiguan" class="card-img-top card-custom__image">
 
@@ -561,7 +589,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/toyota_venza_AWD_XLE.png" alt="Toyota Highlander XLE" class="card-img-top card-custom__image">
 
@@ -586,7 +614,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/lexus_RX_350_LUXURY.png" alt="Lexus RX 350 LUXURY" class="card-img-top card-custom__image">
 
@@ -611,7 +639,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/toyota_ highlander_LE.png" alt="Toyota Highlander LE" class="card-img-top card-custom__image">
 
@@ -636,7 +664,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/hyundai_elantra.png" alt="Hyundai Elantra" class="card-img-top card-custom__image">
 
@@ -661,7 +689,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/mercedes-benz_GLE-Cl.png" alt="Mercedes-Benz GLE-Cl" class="card-img-top card-custom__image">
 
@@ -686,7 +714,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/toyota_venza_AWD_XLE.png" alt="Toyota Venza AWD XLE" class="card-img-top card-custom__image">
 
@@ -711,7 +739,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/lexus_RX_350_F-SPORT.png" alt="Lexus RX 350 F-SPORT" class="card-img-top card-custom__image">
 
@@ -736,7 +764,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/volkswagen_tiguan.png" alt="Volkswagen Tiguan" class="card-img-top card-custom__image">
 
@@ -761,7 +789,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/toyota_venza_AWD_XLE.png" alt="Toyota Highlander XLE" class="card-img-top card-custom__image">
 
@@ -786,7 +814,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/lexus_RX_350_LUXURY.png" alt="Lexus RX 350 LUXURY" class="card-img-top card-custom__image">
 
@@ -811,7 +839,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/toyota_ highlander_LE.png" alt="Toyota Highlander LE" class="card-img-top card-custom__image">
 
@@ -836,7 +864,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/hyundai_elantra.png" alt="Hyundai Elantra" class="card-img-top card-custom__image">
 
@@ -861,7 +889,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/mercedes-benz_GLE-Cl.png" alt="Mercedes-Benz GLE-Cl" class="card-img-top card-custom__image">
 
@@ -886,7 +914,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/Toyota_Venza_AWD_XLE-broun.png" alt="Toyota Venza AWD XLE" class="card-img-top card-custom__image">
 
@@ -911,7 +939,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/lexus_RX_350_F-SPORT.png" alt="Lexus RX 350 F-SPORT" class="card-img-top card-custom__image">
 
@@ -936,7 +964,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/volkswagen_tiguan.png" alt="Volkswagen Tiguan" class="card-img-top card-custom__image">
 
@@ -961,7 +989,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class="col d-flex justify-content-center">
               <div class="card card-custom">
                 <img src="./images/toyota_venza_AWD_XLE.png" alt="Toyota Highlander XLE" class="card-img-top card-custom__image">
 
@@ -1021,12 +1049,338 @@
           </div>
         </div>
       </section>
+
+      <section class="questions">
+        <div class="container">
+          <h2 class="questions__title">Popular questions</h2>
+
+          <div class="question">
+            <div class="question__title-block">
+              <h3 class="question__title">1. Scope</h3>
+              <a
+                class="question__opener"
+                data-bs-toggle="collapse"
+                href="#collapse1"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse1"
+              >
+                <div></div>
+                <div></div>
+              </a>
+
+              <a
+                class="question__closer"
+                data-bs-toggle="collapse"
+                href="#collapse1"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse1"
+              >
+                <div></div>
+              </a>
+            </div>
+
+            <div class="collapse question__collapse" id="collapse1">
+              <p class="question__paragraph">
+                1.1 The statutory warranty is completely excluded to the extent permitted by law.
+              </p>
+              <p class="question__paragraph">
+                1.2 If the vehicle still has a current factory warranty, a sales representative (brand representative) of the manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the warranty, if any.
+              </p>
+              <p class="question__paragraph">
+                1.3 If there is a special warranty insurance for the vehicle, this will take the place of the material warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the respective warranty service provider apply.
+              </p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question__title-block">
+              <h3 class="question__title">2. Vehicle characteristics</h3>
+              <a
+                class="question__opener"
+                data-bs-toggle="collapse"
+                href="#collapse2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse2"
+              >
+                <div></div>
+                <div></div>
+              </a>
+
+              <a
+                class="question__closer"
+                data-bs-toggle="collapse"
+                href="#collapse2"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse2"
+              >
+                <div></div>
+              </a>
+            </div>
+
+            <div class="collapse question__collapse" id="collapse2">
+              <p class="question__paragraph">
+                2.1 The statutory warranty is completely excluded to the extent permitted by law.
+              </p>
+              <p class="question__paragraph">
+                2.2 If the vehicle still has a current factory warranty, a sales representative (brand representative) of the manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the warranty, if any.
+              </p>
+              <p class="question__paragraph">
+                2.3 If there is a special warranty insurance for the vehicle, this will take the place of the material warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the respective warranty service provider apply.
+              </p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question__title-block">
+              <h3 class="question__title">3. Warranty / guarantee</h3>
+              <a
+                class="question__opener"
+                data-bs-toggle="collapse"
+                href="#collapse3"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse3"
+              >
+                <div></div>
+                <div></div>
+              </a>
+
+              <a
+                class="question__closer"
+                data-bs-toggle="collapse"
+                href="#collapse3"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse3"
+              >
+                <div></div>
+              </a>
+            </div>
+
+            <div class="collapse question__collapse" id="collapse3">
+              <p class="question__paragraph">
+                1.1 The statutory warranty is completely excluded to the extent permitted by law.
+              </p>
+              <p class="question__paragraph">
+                1.2 If the vehicle still has a current factory warranty, a sales representative (brand representative) of the manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the warranty, if any.
+              </p>
+              <p class="question__paragraph">
+                1.3 If there is a special warranty insurance for the vehicle, this will take the place of the material warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the respective warranty service provider apply.
+              </p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question__title-block">
+              <h3 class="question__title">4. Trade-in vehicle</h3>
+              <a
+                class="question__opener"
+                data-bs-toggle="collapse"
+                href="#collapse4"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse4"
+              >
+                <div></div>
+                <div></div>
+              </a>
+
+              <a
+                class="question__closer"
+                data-bs-toggle="collapse"
+                href="#collapse4"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse4"
+              >
+                <div></div>
+              </a>
+            </div>
+
+            <div class="collapse question__collapse" id="collapse4">
+              <p class="question__paragraph">
+                1.1 The statutory warranty is completely excluded to the extent permitted by law.
+              </p>
+              <p class="question__paragraph">
+                1.2 If the vehicle still has a current factory warranty, a sales representative (brand representative) of the manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the warranty, if any.
+              </p>
+              <p class="question__paragraph">
+                1.3 If there is a special warranty insurance for the vehicle, this will take the place of the material warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the respective warranty service provider apply.
+              </p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question__title-block">
+              <h3 class="question__title">5. Home Delivery</h3>
+              <a
+                class="question__opener"
+                data-bs-toggle="collapse"
+                href="#collapse5"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse5"
+              >
+                <div></div>
+                <div></div>
+              </a>
+
+              <a
+                class="question__closer"
+                data-bs-toggle="collapse"
+                href="#collapse5"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse5"
+              >
+                <div></div>
+              </a>
+            </div>
+
+            <div class="collapse question__collapse" id="collapse5">
+              <p class="question__paragraph">
+                1.1 The statutory warranty is completely excluded to the extent permitted by law.
+              </p>
+              <p class="question__paragraph">
+                1.2 If the vehicle still has a current factory warranty, a sales representative (brand representative) of the manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the warranty, if any.
+              </p>
+              <p class="question__paragraph">
+                1.3 If there is a special warranty insurance for the vehicle, this will take the place of the material warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the respective warranty service provider apply.
+              </p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question__title-block">
+              <h3 class="question__title">6. Right of return</h3>
+              <a
+                class="question__opener"
+                data-bs-toggle="collapse"
+                href="#collapse6"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse6"
+              >
+                <div></div>
+                <div></div>
+              </a>
+
+              <a
+                class="question__closer"
+                data-bs-toggle="collapse"
+                href="#collapse6"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse6"
+              >
+                <div></div>
+              </a>
+            </div>
+
+            <div class="collapse question__collapse" id="collapse6">
+              <p class="question__paragraph">
+                1.1 The statutory warranty is completely excluded to the extent permitted by law.
+              </p>
+              <p class="question__paragraph">
+                1.2 If the vehicle still has a current factory warranty, a sales representative (brand representative) of the manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the warranty, if any.
+              </p>
+              <p class="question__paragraph">
+                1.3 If there is a special warranty insurance for the vehicle, this will take the place of the material warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the respective warranty service provider apply.
+              </p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question__title-block">
+              <h3 class="question__title">7. Written form</h3>
+              <a
+                class="question__opener"
+                data-bs-toggle="collapse"
+                href="#collapse7"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse7"
+              >
+                <div></div>
+                <div></div>
+              </a>
+
+              <a
+                class="question__closer"
+                data-bs-toggle="collapse"
+                href="#collapse7"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse7"
+              >
+                <div></div>
+              </a>
+            </div>
+
+            <div class="collapse question__collapse" id="collapse7">
+              <p class="question__paragraph">
+                1.1 The statutory warranty is completely excluded to the extent permitted by law.
+              </p>
+              <p class="question__paragraph">
+                1.2 If the vehicle still has a current factory warranty, a sales representative (brand representative) of the manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the warranty, if any.
+              </p>
+              <p class="question__paragraph">
+                1.3 If there is a special warranty insurance for the vehicle, this will take the place of the material warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the respective warranty service provider apply.
+              </p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question__title-block">
+              <h3 class="question__title">8. Applicable law and place of jurisdiction</h3>
+              <a
+                class="question__opener"
+                data-bs-toggle="collapse"
+                href="#collapse8"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse8"
+              >
+                <div></div>
+                <div></div>
+              </a>
+
+              <a
+                class="question__closer"
+                data-bs-toggle="collapse"
+                href="#collapse8"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse8"
+              >
+                <div></div>
+              </a>
+            </div>
+
+            <div class="collapse question__collapse" id="collapse8">
+              <p class="question__paragraph">
+                1.1 The statutory warranty is completely excluded to the extent permitted by law.
+              </p>
+              <p class="question__paragraph">
+                1.2 If the vehicle still has a current factory warranty, a sales representative (brand representative) of the manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of the warranty for new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on the market, but the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the warranty, if any.
+              </p>
+              <p class="question__paragraph">
+                1.3 If there is a special warranty insurance for the vehicle, this will take the place of the material warranty according to section 3.1 and replace it. In this case, the General Terms and Conditions of the respective warranty service provider apply.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <nav class="navigation footer__navigation container">
-        <div class="row">
-          <div class="col-md-4">
+        <div class="row footer__row-modify">
+          <div class="col-4">
             <a href="#" class="logo footer__logo">
               <img
                 src="./icons/logo.svg"
@@ -1036,7 +1390,7 @@
             </a>
           </div>
 
-          <ul class="navigation__menu col-md-4">
+          <ul class="navigation__menu col-4">
             <li class="navigation__item">
               <a href="#" class="navigation__link">Inventory</a>
             </li>
@@ -1048,7 +1402,7 @@
             </li>
           </ul>
 
-          <div class="navigation__messangers footer__messangers col-md-4">
+          <div class="navigation__messangers footer__messangers col-4">
             <a href="#" class="navigation__messanger">
               <img src="./icons/facebook.svg" alt="facebook" class="navigation__icon">
             </a>

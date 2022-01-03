@@ -38,4 +38,10 @@
       border-color: $secondary-500;
     }
   }
+
+  @media (max-width: 767px) {
+    &__input {
+      margin-bottom: 10px;
+    }
+  }
 }

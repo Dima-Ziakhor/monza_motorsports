@@ -6,3 +6,4 @@ src/styles/reset.scss
 
 # Select styles
 src/styles/blocks/select.scss
+src/styles/blocks/question.scss

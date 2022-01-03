@@ -4,6 +4,10 @@
 
   &__content {
     padding-right: 120px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__title {

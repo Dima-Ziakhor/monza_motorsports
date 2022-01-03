@@ -11,6 +11,68 @@
     align-items: center;
   }
 
+  &__small-sreen {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 100px;
+    height: 100vh;
+    width: 50%;
+    background-color: $secondary-100;
+    transition: right $transition-duration;
+
+    &--active {
+      display: flex;
+      animation-duration: $transition-duration;
+      animation-name: show-nav;
+
+      @keyframes show-nav {
+        from {
+          right: -50%;
+        }
+
+        to {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &__small-sreen-close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $secondary-500;
+    border-radius: 50%;
+    cursor: pointer;
+
+    & > div {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 2px;
+      background-color: $secondary-500;
+
+      &:first-child {
+        transform: rotate(45deg) translateY(-50%);
+      }
+
+      &:last-child {
+        transform: rotate(-45deg) translateY(-50%);
+      }
+    }
+  }
+
+  &__menu-small-sreen {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
   &__link {
     font-weight: 500;
     font-size: 15px;
@@ -28,5 +90,48 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 23px;
+  }
+
+  &__toggler-wrapper {
+    display: none;
+  }
+
+  &__toggler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    width: 40px;
+    height: 30px;
+    border: 1px solid $primary-200;
+    border-radius: 5px;
+
+    & > span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background-color: $primary-200;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__toggler-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &--active {
+        display: none;
+      }
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__messangers {
+      display: none;
+    }
   }
 }
