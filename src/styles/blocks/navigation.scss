@@ -83,6 +83,10 @@
     &:hover {
       color: $primary-300;
     }
+
+    &:active {
+      color: $secondary-500;
+    }
   }
 
   &__messangers {
@@ -90,6 +94,14 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 23px;
+  }
+
+  &__icon {
+    transition: $transition-duration;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__toggler-wrapper {

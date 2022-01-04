@@ -19,6 +19,11 @@
     background-color: $txt-color;
     color: $btn-color;
   }
+
+  &:active {
+    background-color: $btn-color;
+    color: $btn-color;
+  }
 }
 
 @mixin section-title {

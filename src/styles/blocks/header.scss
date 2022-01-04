@@ -36,5 +36,9 @@
     &:hover {
       color: $primary-100;
     }
+
+    &:active {
+      color: $secondary-500;
+    }
   }
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" type="images/png" href="./icons/favicon.png">
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/style.scss">
 
@@ -27,21 +28,29 @@
 
           <ul class="navigation__menu col-lg-3">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Inventory</a>
+              <a href="#inventory" class="navigation__link">Inventory</a>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link">Financing</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Contacts</a>
+              <a href="#contacts" class="navigation__link">Contacts</a>
             </li>
           </ul>
 
           <div class="navigation__messangers col-lg-1">
-            <a href="#" class="navigation__messanger">
+            <a
+              href="https://www.facebook.com/MonzaMotorsports/"
+              class="navigation__messanger"
+              target="__blank"
+            >
               <img src="./icons/facebook.svg" alt="facebook" class="navigation__icon">
             </a>
-            <a href="#" class="navigation__messanger">
+            <a
+              href="https://www.instagram.com/monza.motorsport/"
+              class="navigation__messanger"
+              target="__blank"
+            >
               <img src="./icons/instagram.svg" alt="instagram" class="navigation__icon">
             </a>
           </div>
@@ -63,13 +72,13 @@
 
           <ul class="navigation__menu-small-sreen">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Inventory</a>
+              <a href="#inventory" class="navigation__link">Inventory</a>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link">Financing</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Contacts</a>
+              <a href="#contacts" class="navigation__link">Contacts</a>
             </li>
           </ul>
         </div>
@@ -91,7 +100,7 @@
             </div>
           </div>
 
-          <a href="#" class="header__button col-md-3">Browse cars</a>
+          <a href="#inventory" class="header__button col-md-3">Browse cars</a>
         </div>
       </div>
     </header>
@@ -561,7 +570,7 @@
         </div>
       </section>
 
-      <section class="car-cards">
+      <section id="inventory" class="car-cards">
         <div class="container">
           <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col d-flex justify-content-center">
@@ -717,12 +726,12 @@
             </div>
 
             <div class="col d-flex justify-content-center">
-              <div class="card card-custom">
-                <div class="card-custom__image-wrapper card-custom__image-wrapper--solid">
+              <div class="card card-custom card-custom--sold">
+                <div class="card-custom__image-wrapper card-custom__image-wrapper--sold">
                   <img src="./images/toyota_venza_AWD_XLE.png" alt="Toyota Venza AWD XLE" class="card-img-top card-custom__image">
                 </div>
 
-                <div class="card-body card-custom__body card-custom__body--solid">
+                <div class="card-body card-custom__body card-custom__body--sold">
                   <div class="card-text">
                     <div class="card-custom__main-info">
                       <div class="card-custom__year">2015</div>
@@ -1023,7 +1032,7 @@
         </div>
       </section>
 
-      <section class="found">
+      <section id="contacts" class="found">
         <div class="container">
           <div class="row">
             <div class="found__content col-md-6">
@@ -1398,18 +1407,22 @@
 
           <ul class="navigation__menu col-4">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Inventory</a>
+              <a href="#inventory" class="navigation__link">Inventory</a>
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link">Financing</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Contacts</a>
+              <a href="#contacts" class="navigation__link">Contacts</a>
             </li>
           </ul>
 
           <div class="navigation__messangers footer__messangers col-4">
-            <a href="#" class="navigation__messanger">
+            <a
+              href="https://www.facebook.com/MonzaMotorsports/"
+              class="navigation__messanger"
+              target="__blank"
+            >
               <img src="./icons/facebook.svg" alt="facebook" class="navigation__icon">
             </a>
             <a href="#" class="navigation__messanger">
