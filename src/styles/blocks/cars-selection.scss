@@ -71,6 +71,7 @@
   &__label {
     font-weight: normal;
     font-size: 12px;
+    cursor: pointer;
   }
 
   &__sort-select {
@@ -114,13 +115,9 @@
     }
   }
 
-  &__sort-content-wrapper {
-    border: 1px solid $secondary-300;
-    border-radius: 15px;
-  }
-
   &__sort-content {
-    border: none;
+    border: 1px solid $secondary-300;;
+    border-radius: 15px;
   }
 
   &__sort-label {

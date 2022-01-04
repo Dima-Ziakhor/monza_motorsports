@@ -28,6 +28,7 @@
     
     .select__label + .select__input + .select__label {
       max-height: max-content;
+      border-radius: 15px;
     }
   }
 }
